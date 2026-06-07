@@ -1,0 +1,41 @@
+// {
+//   "compilerOptions": {
+//     "target": "ES2016",
+//     "module": "commonjs",
+//     "rootDir": "./src",
+//     "outDir": "./dist",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "types": ["node"]
+//   }
+// }
+
+// {
+//   "compilerOptions": {
+//     "target": "ES2020",
+//     "module": "ESNext",
+//     "moduleResolution": "bundler",
+//     "jsx": "react-jsx",         // <-- This is the magic line you are missing!
+//     "rootDir": "./",            // Vite looks at the root for index.html
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "isolatedModules": true
+//   },
+//   "include": ["src"]
+// }
+
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}
