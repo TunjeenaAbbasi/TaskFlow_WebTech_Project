@@ -11,22 +11,11 @@ import {
 
 const router = express.Router();
 
-//PUT change
-// router.put("/tasks:id", updateTask);
-router.put("/:id", updateTask);
-// GET
 router.get("/", getTasks);
-
-
-// POST
 router.post("/", createTask);
 
-
-// BULK DELETE
-router.delete("/bulk", bulkDeleteTasks);
-
-
-// DELETE SINGLE
+router.delete("/bulk", bulkDeleteTasks); // ALWAYS BEFORE :id
+router.put("/:id", updateTask);
 router.delete("/:id", deleteTask);
 
 export default router;
